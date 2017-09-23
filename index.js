@@ -175,7 +175,7 @@ function positionToInteger(p) {
   return parseInt(p.split('px')[0]) || 0
 }
 
-function start() {
+function START() {
   window.addEventListener('keydown', moveDodger)
 
   START.style.display = 'none'
