@@ -113,8 +113,8 @@ function endGame() {
   clearInterval(gameInterval)
   ROCKS.forEach(function(rock){rock.remove()})
   document.removeEventListener('keydown', moveDodger);
-  START.innerHTML = 'Play again?'
-  START.style.display = 'inline'
+  start.innerHTML = 'Play again?'
+  start.style.display = 'inline'
   return alert ('YOU LOSE!')
 }
 
@@ -175,7 +175,7 @@ function positionToInteger(p) {
   return parseInt(p.split('px')[0]) || 0
 }
 
-function START() {
+function start() {
   window.addEventListener('keydown', moveDodger)
 
   START.style.display = 'none'
