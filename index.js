@@ -113,8 +113,8 @@ function endGame() {
   clearInterval(gameInterval)
   ROCKS.forEach(function(rock){rock.remove()})
   document.removeEventListener('keydown', moveDodger);
-  start.innerHTML = 'Play again?'
-  start.style.display = 'inline'
+  START.innerHTML = 'Play again?'
+  START.style.display = 'inline'
   return alert ('YOU LOSE!')
 }
 
